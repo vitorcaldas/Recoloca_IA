@@ -1,46 +1,9 @@
 # Recoloca_IA
 
 Recoloca IA é um sistema multi-agente para desenvolvimento de carreira. Ele ajuda os usuários a descobrir vagas de emprego, identificar lacunas de habilidades, encontrar cursos direcionados e praticar habilidades de entrevista através de um pipeline orquestrado de agentes especializados.
-┌─────────────────────────────────────────────────┐
-│                  Usuário                         │
-└────────────────────┬────────────────────────────┘
-                      │
-                      ▼
-┌─────────────────────────────────────────────────┐
-│              MAESTRO (Orquestrador)              │
-│  - Interface primária com o usuário             │
-│  - Coordena agentes especializados              │
-│  - Consolida resultados e apresenta ao usuário  │
-└──┬──────────────┬──────────────┬────────────────┘
-   │              │              │
-   ▼              ▼              ▼
-┌─────────┐  ┌──────────┐  ┌──────────────┐
-│ SCOUT   │  │ CURATOR  │  │ COACH        │
-│ (Busca  │  │ (Busca   │  │ (Simulador   │
-│ de      │  │ de       │  │ de           │
-│ Empregos)│  │ Cursos)  │  │ Entrevistas) │
-└─────────┘  └──────────┘  └──────────────┘
-recoloca-ia/
-├── README.md                          # Este arquivo
-├── data/
-│   ├── personality-quiz.md            # Respostas do quiz do usuário (modelo)
-│   ├── user-profile.md                # Perfil consolidado (modelo)
-│   ├── job-search-results.md          # Resultados de busca de vagas
-│   ├── course-recommendations.md      # Recomendações de cursos
-│   └── interview-session.md           # Rastreamento de estado da entrevista do Coach
-├── personas/
-│   ├── maestro.md                     # Definição do orquestrador Maestro
-│   ├── scout.md                       # Definição do agente de busca de vagas Scout
-│   ├── curator.md                     # Definição do agente de busca de cursos Curator
-│   └── coach.md                       # Definição do agente de simulação de entrevista Coach
-└── skills/
-    ├── dispatch.md                    # Protocolo de despacho e handoff de agentes
-    ├── firecrawl.md                   # Uso do CLI Firecrawl para busca e raspagem
-    ├── job-search.md                  # Skill do Scout: fluxo de busca de vagas
-    ├── course-analysis.md             # Skill do Curator: fluxo de busca de cursos
-    └── interview-sim.md              # Skill do Coach: fluxo de simulação de entrevista
 
     Como Usar
+    
 Pré-requisitos
 Zed — o editor assistido por IA usado para executar agentes
 OpenRouter — configurado como o provedor de LLM no Zed
