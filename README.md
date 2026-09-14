@@ -2,8 +2,8 @@
 
 Recoloca IA é um sistema multi-agente para desenvolvimento de carreira. Ele ajuda os usuários a descobrir vagas de emprego, identificar lacunas de habilidades, encontrar cursos direcionados e praticar habilidades de entrevista através de um pipeline orquestrado de agentes especializados.
 
-    Como Usar
-    
+Como Usar
+
 Pré-requisitos
 Zed — o editor assistido por IA usado para executar agentes
 OpenRouter — configurado como o provedor de LLM no Zed
